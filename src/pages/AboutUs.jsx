@@ -8,8 +8,8 @@ const AboutUs = () => {
   return (
     <div>
       <div className="bg-gray-300 h-80 flex justify-center items-center flex-col">
-        <div className="flex">
-          <div>HOME</div> <div className="text-orange-400">ABOUT US</div>
+        <div className="flex bg-white rounded-2xl p-2">
+          <div>HOME : </div> <div className="text-orange-400"> ABOUT US</div>
         </div>
 
         <div className="text-2xl font-semibold">AboutUs</div>
