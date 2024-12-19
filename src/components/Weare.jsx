@@ -47,22 +47,23 @@
 
     function Weare() {
     return (
-        <div className='flex justify-center items-center gap-10 border border-black p-10'>
-        <div className='  bg-red-100 flex items-center'>
+        <div className='flex justify-center mt-52'>
+            <div className='flex justify-center items-center gap-10  p-10 w-3/4'>
+        <div className='  bg-red-100 flex items-center w-1/2 h-2/3 '>
             <img
-            className='overflow-hidden h-2/3 w-3/4 rounded-lg'
+            className='overflow-hidden h-full w-full rounded-full '
             src="https://images.unsplash.com/photo-1588912914078-2fe5224fd8b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cnNlc3xlbnwwfHwwfHx8MA%3D%3D"
             alt="Course"
             />
         </div>
-        <div> 
-            <div className='text-2xl font-bold mb-4 text-start'>Who We Are</div>
+        <div className=' mt-10 '> 
+            <div className='text-2xl font-bold mb-4 text-start text-orange-400'>Who We Are</div>
             <div>
-            <div className='text-xl mb-2 text-start'>
+            <div className='text-3xl mb-2 text-start font-bold '>
                 We Offer The <span className='text-cyan-500'>Best Career</span>
             </div>
             <hr className='mb-4' />
-            <div className='w-full md:w-1/2 '>
+            <div className='w-full'>
                 <div className='flex m-4'>
                 <div className='bg-cyan-300 rounded-full h-16 w-16 flex items-center justify-center'>
                     <span>logo</span>
@@ -101,6 +102,7 @@
                 <hr className='mb-4' />
             </div>
             </div>
+        </div>
         </div>
         </div>
     );
