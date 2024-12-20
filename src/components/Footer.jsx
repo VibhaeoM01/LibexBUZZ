@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-blue-50 to-blue-100 py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Newsletter Section */}
+       
         <div className="text-center mb-8">
           <h2 className="text-lg font-semibold text-gray-700">Enter Your Mail</h2>
           <div className="mt-4 flex justify-center">
@@ -18,9 +18,9 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        {/* Footer Links */}
+     
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-700">
-          {/* About Us */}
+    
           <div>
             <h3 className="text-lg font-semibold mb-4">About Us</h3>
             <p className="text-sm">
@@ -39,7 +39,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* Quick Links */}
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
             <ul className="space-y-2 text-sm">
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>» Contact Us</li>
             </ul>
           </div>
-          {/* Courses */}
+     
           <div>
             <h3 className="text-lg font-semibold mb-4">Courses</h3>
             <ul className="space-y-2 text-sm">
@@ -60,16 +60,16 @@ const Footer = () => {
               <li>» Data Science</li>
             </ul>
           </div>
-          {/* Gallery */}
+    
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Gallery</h3>
             <div className="grid grid-cols-3 gap-2">
-              <img src="https://via.placeholder.com/50" alt="Gallery 1" className="rounded-md" />
-              <img src="https://via.placeholder.com/50" alt="Gallery 2" className="rounded-md" />
-              <img src="https://via.placeholder.com/50" alt="Gallery 3" className="rounded-md" />
-              <img src="https://via.placeholder.com/50" alt="Gallery 4" className="rounded-md" />
-              <img src="https://via.placeholder.com/50" alt="Gallery 5" className="rounded-md" />
-              <img src="https://via.placeholder.com/50" alt="Gallery 6" className="rounded-md" />
+              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
             </div>
           </div>
         </div>

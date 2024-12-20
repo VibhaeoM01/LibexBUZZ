@@ -5,11 +5,15 @@ import SubNav from "../components/WebDev/SubNav";
 import Overview from "../components/WebDev/Overview";
 import Curriculum from "../components/WebDev/Curriculum";
 import Reviews from "../components/WebDev/Reviews";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,useParams } from "react-router-dom";
 import { Star, CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import Coursecards from "../components/WebDevcom/Coursecards";
 
-function WebDev() {
+
+
+function CourseComp() {
+  const {name}=useParams()
+  // console.log(data)
   return (
     // <div>
     <div>
@@ -39,21 +43,15 @@ function WebDev() {
             </div>
             <hr />
             <div className="flex my-3 gap-9 text-lg">
-              <div className="flex">
-                <div className="w-20 rounded-full">
-                  <img
-                    className="rounded-full"
-                    src="https://images.unsplash.com/photo-1733036432312-9db8f19fad01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D"
-                    alt=""
-                  />
-                </div>
+              <div className="flex gap-2">
+              <div className='h-10 overflow-hidden w-10 rounded-full'><img className='rounded-full' src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="" /></div>
                 <div>Mahesh</div>
               </div>
               <div className="flex">
-                <div className="rounded-full ">
+              <div className='h-12  overflow-hidden w-10 rounded-full'>
                   <img
                     className="h-16 w-16"
-                    src="https://static.vecteezy.com/system/resources/previews/004/852/965/non_2x/video-play-film-player-movie-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg"
+                    src="video.png"
                     alt=""
                   />
                 </div>
@@ -71,15 +69,15 @@ function WebDev() {
               <img
                 className="rounded-lg w-3/4"
                 src="https://images.unsplash.com/photo-1733371001616-0341f62c56c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU5fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D"
-                alt="hgfd"
+                alt=""
               />
             </div>
 
             <SubNav />
             <Routes>
               <Route path="/overview" element={<Overview />} />
-              <Route path="curriculum" element={<Curriculum />} />
-              <Route path="reviews" element={<Reviews />} />
+              <Route path="/curriculum" element={<Curriculum />} />
+              <Route path="/reviews" element={<Reviews />} />
             </Routes>
 
             <div className="flex m-5 mt-10 gap-3 p-5 border border-gray-200 rounded-lg">
@@ -235,4 +233,4 @@ function WebDev() {
   );
 }
 
-export default WebDev;
+export default CourseComp;
