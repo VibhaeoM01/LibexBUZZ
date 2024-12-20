@@ -20,7 +20,7 @@ const Routing = () => {
         <Route path="/profile" element={<MyProfile />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/webdev" element={<WebDev />} />  */}
-        <Route path="/webdev/*" element={<WebDev />} />
+        <Route path="/:name" element={<WebDev />} />
         {/* <Route path="/webdev/:wdID/*" element={<WebDev />} /><wdrouting /> */}
         {/* <Route path="webdev" element=<</Routes>></Route> */}
       </Routes>

@@ -3,9 +3,9 @@ import TestiCard from './TestiCard'
 
 
 const val=[
-    {name:"John D" ,proff:"Web Development Graduate",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. "},
-    {name:"Maren Geidt" ,proff:"Web Development Graduate",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {name:"Mira Dias" ,proff:"Web Development Graduate",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {name:"John D" ,proff:"Web Development Graduate",description:"Libex's hands-on approach and expert instructors helped me land my dream job in Web Development. "},
+    {name:"Maren Geidt" ,proff:"Web Development Graduate",description:"The data science course at Libex gave me the confidence to shift careers and pursue my passion in tech."},
+    {name:"Mira Dias" ,proff:"Web Development Graduate",description:"Thanks to Libex, I gained practical skills in UI/UX design that transformed my professional trajectory."},
 ]
 
 
