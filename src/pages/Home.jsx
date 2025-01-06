@@ -38,8 +38,8 @@ const handlenav=()=>{
 
 
      <div className="flex justify-center">
-     <div className="bg-violet-200 flex p-32 rounded-3xl  h-2/3 w-10/12 m-28">
-        <div  className="overflow-hidden rounded-xl"><img className="w-full" src="https://images.unsplash.com/photo-1733235014699-d7bcf05ed324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="img" /></div>
+     <div className="bg-violet-100 flex p-20 rounded-3xl  h-2/3 w-10/12 m-28">
+        <div  className="overflow-hidden rounded-xl"><img className="w-full " src="https://images.unsplash.com/photo-1733235014699-d7bcf05ed324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="img" /></div>
         <div className=" mx-16 w-1/2 text-left ml-36">
           <div className="text-left text-orange-500 text-3xl">
             About us

@@ -38,19 +38,19 @@ const SubNav = () => {
   return (
     <nav className="flex gap-8 border-b pb-4 mb-6 m-5 text-xl">
       <Link 
-        to="/webdev/overview"  // Changed to absolute path
+        to="/overview"  // Changed to absolute path
         className="hover:text-blue-600 font-medium"
       >
         Overview
       </Link>
       <Link 
-        to="/webdev/curriculum"  // Changed to absolute path
+        to="/curriculum"  // Changed to absolute path
         className="hover:text-blue-600 font-medium"
       >
         Curriculum
       </Link>
       <Link 
-        to="/webdev/reviews"  // Changed to absolute path
+        to="/reviews"  // Changed to absolute path
         className="hover:text-blue-600 font-medium"
       >
         Reviews
