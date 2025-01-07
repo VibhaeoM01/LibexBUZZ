@@ -38,7 +38,7 @@ import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import Internships from "../pages/Internships";
 import MyProfile from "../pages/MyProfile";
-import Contact from "../pages/Contact";
+import Contact from "../pages/ContactUs";
 import Footer from "../components/Footer";
 // import WebDev from "../pages/internships/Webdev";
 import WebDev from "../pages/CourseComp";
@@ -58,7 +58,7 @@ const Routing = () => {
         <Route path="/internships/data-science" element={<DataScience />} />
         <Route path="/internships/design" element={<Design />} />
         <Route path="/profile" element={<MyProfile />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>
