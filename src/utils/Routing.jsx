@@ -44,6 +44,7 @@ import Footer from "../components/Footer";
 import WebDev from "../pages/CourseComp";
 import DataScience from "../pages/internships/DataScience";
 import Design from "../pages/internships/Design";
+import CourseDetails from "../pages/CoursePage";
 
 const Routing = () => {
   return (
@@ -53,7 +54,7 @@ const Routing = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/internships" element={<Internships />} />
-        <Route path="/course/webdev" element={<WebDev />} />
+        <Route path="/course/:courseid" element={<CourseDetails />} />
         <Route path="/internships/data-science" element={<DataScience />} />
         <Route path="/internships/design" element={<Design />} />
         <Route path="/profile" element={<MyProfile />} />

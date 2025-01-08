@@ -8,9 +8,13 @@ import Reviews from "../components/WebDev/Reviews";
 import { Route, Routes,useParams } from "react-router-dom";
 import { Star, CircleArrowLeft, CircleArrowRight } from "lucide-react";
 import Coursecards from "../components/WebDevcom/Coursecards";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import PropTypes from 'prop-types'; 
 
 
-const courseData = [
+export const courseData = [
   {
     id: "ui-ux",
     title: "The Complete UI/UX Designer Course",
@@ -269,12 +273,47 @@ const courseData = [
   }
 ];
 
-// export default courseData;
+
 
 function CourseComp() {
 
+  function CustomTabPanel(props) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`simple-tabpanel-${index}`}
+        aria-labelledby={`simple-tab-${index}`}
+        {...other}
+      >
+        {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      </div>
+    );
+  }
+  
+  CustomTabPanel.propTypes = {
+    children: PropTypes.node,
+    index: PropTypes.number.isRequired,
+    value: PropTypes.number.isRequired,
+  };
+  
+  function a11yProps(index) {
+    return {
+      id: `simple-tab-${index}`,
+      'aria-controls': `simple-tabpanel-${index}`,
+    };
+  }
+  
+  
+    const [value, setValue] = React.useState(0);
+  
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
   return (
-    // <div>
+   
     <div>
       <div>
         <div className="bg-gray-300 h-80 flex justify-center items-center flex-col">
@@ -334,14 +373,24 @@ function CourseComp() {
               />
             </div>
 
-            <SubNav />
-            <div className="mt-5">
-              <Routes>
-                <Route path="/overview" element={<Overview />} />
-                <Route path="/curriculum" element={<Curriculum />} />
-                <Route path="/reviews" element={<Reviews />} />
-              </Routes>
-            </div>
+           
+            
+            <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+  <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+    <Tab label="Overview" {...a11yProps(0)} />
+    <Tab label="Curriculum" {...a11yProps(1)} />
+    <Tab label="Reviews" {...a11yProps(2)} />
+  </Tabs>
+</Box>
+<CustomTabPanel value={value} index={0}>
+  <Overview />
+</CustomTabPanel>
+<CustomTabPanel value={value} index={1}>
+  <Curriculum />
+</CustomTabPanel>
+<CustomTabPanel value={value} index={2}>
+  <Reviews />
+</CustomTabPanel>
          
 
             <div className="flex m-5 mt-10 gap-3 p-5 border border-gray-200 rounded-lg">
@@ -386,10 +435,7 @@ function CourseComp() {
               </div>
             </div>
           </div>
-          {/* <div></div> */}
-          {/* <Wdrouting /> */}
-          {/* <SubNav /> */}.
-        
+ 
           <div className="border border-gray-300 rounded-lg h-fit w-96 p-4 text-xl">
             <div className="p-4 text-center">Course Includes:</div>
             <hr />
@@ -494,7 +540,7 @@ function CourseComp() {
      </div>
 
     </div>
-    //   </div>
+   
   );
 }
 

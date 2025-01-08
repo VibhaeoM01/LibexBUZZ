@@ -79,7 +79,7 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/internships/data-science"
+                    to="/course/data-science"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Data Science
@@ -87,25 +87,41 @@ function Navbar() {
                 </li>
                 <li>
                   <Link
-                    to="/internships/design"
+                    to="/course/ui-ux"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
-                    Design
+                    UI UX
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/internships/Webdev"
+                    to="/course/machine-learning"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Machine Learning
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="block px-4 py-2  hover:bg-gray-100">
+                  <Link to="/course/java" className="block px-4 py-2  hover:bg-gray-100">
                     Java
                   </Link>
                 </li>
+                <li>
+                  <Link to="/course/artificial-intelligence" className="block px-4 py-2  hover:bg-gray-100">
+                    Artificial Intelligence
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/course/python" className="block px-4 py-2  hover:bg-gray-100">
+                    Python
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/course/cybersecurity" className="block px-4 py-2  hover:bg-gray-100">
+                    Cyber Security
+                  </Link>
+                </li>
+
               </ul>
             )}
           </li>
