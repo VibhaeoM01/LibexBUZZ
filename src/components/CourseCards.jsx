@@ -2,10 +2,10 @@ import React from 'react'
 import CourseCard from './CourseCard';
 
 const val=[
- {weeks:7 ,Cname:'React',lessons:70,students:1000,src:'https://images.unsplash.com/photo-1588912914078-2fe5224fd8b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cnNlc3xlbnwwfHwwfHx8MA%3D%3D'},
-    {weeks:6 ,Cname:'Angular',lessons:60,students:900,src:'https://images.unsplash.com/photo-1601543461574-3a431aefc27d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y291cnNlc3xlbnwwfHwwfHx8MA%3D%3D'},
-    {weeks:5 ,Cname:'Vue',lessons:50,students:800 ,src:'https://plus.unsplash.com/premium_photo-1684971642831-f88b3fd4e089?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvdXJzZXN8ZW58MHx8MHx8fDA%3D'},
-    {weeks:4 ,Cname:'Node',lessons:40,students:700 ,src:'https://images.unsplash.com/photo-1719937050640-71cfd3d851be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8    '},
+ {weeks:7 ,Cname:'WordPress For Everyone: Unlock Your Creativity',lessons:70,students:1000,src:'Images/12.png'},
+    {weeks:6 ,Cname:'The Data Science Revolution: Upgrading Your Skills',lessons:60,students:900,src:'Images/13.png'},
+    {weeks:5 ,Cname:'From Zero to Website: A Web Development Adventure',lessons:50,students:800 ,src:'Images/14.png'},
+    {weeks:4 ,Cname:'advanced Mastering UI/UX: Design Fundamentals course',lessons:40,students:700 ,src:'Images/15.png'},
 ];
 function CourseCards() {
   return (

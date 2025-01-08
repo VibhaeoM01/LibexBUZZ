@@ -70,7 +70,7 @@ function Navbar() {
               <ul className="absolute top-full left-0 bg-white text-black shadow-lg mt-1 rounded">
                 <li>
                   <Link
-                    to="/WebDev"
+                    to="/course/webdev"
                     className="block px-4 py-2 hover:bg-gray-100"
                   >
                     Web Development

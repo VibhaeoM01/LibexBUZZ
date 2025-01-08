@@ -49,10 +49,10 @@
     return (
         <div className='flex justify-center mt-52'>
             <div className='flex justify-center items-center gap-10  p-10 w-3/4'>
-        <div className=' flex items-center w-1/2 h-2/3 '>
+        <div className=' flex items-center w-2/3 h-full  '>
             <img
             className='overflow-hidden h-full w-full rounded-full '
-            src="https://images.unsplash.com/photo-1588912914078-2fe5224fd8b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cnNlc3xlbnwwfHwwfHx8MA%3D%3D"
+            src="Images/16.png"
             alt="Course"
             />
         </div>
