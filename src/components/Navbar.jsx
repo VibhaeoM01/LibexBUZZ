@@ -37,7 +37,10 @@ function Navbar() {
   // const navigate = useNavigate();
   const navigate = useNavigate();
   const handlenav = () => {
-    navigate('/WebDev');
+    navigate('/login');
+  };
+  const handlenav1 = () => {
+    navigate('/signup');
   };
 
   return (
@@ -127,7 +130,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/profile" className="hover:text-gray-700">
-              My Profile
+              Blogs
             </Link>
           </li>
           <li>
@@ -136,12 +139,15 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <button className="flex items-center justify-between bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition duration-300">
-       <span>Join For Free</span>
-       <div className="flex items-center justify-center w-6 h-6 bg-white rounded-lg ms-2">
-         <span className="text-black text-lg">&#8250;</span>
-      </div>
+      
+    <div className="flex gap-10">
+    <button onClick={handlenav} className="rounded-lg py-3 px-4 border" style={{ border: '1px solid #674CEF' }}>
+      Login
+    </button>
+     <button  onClick={handlenav1} className=" bg-[#674CEF] rounded-lg  text-white py-3 px-4  border border: 1px solid #674CEF;">
+            Signup
      </button>
+    </div>
       </div>
     </nav>
   );

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Star, CircleArrowLeft, CircleArrowRight } from 'lucide-react';
 import { Box, Tabs, Tab } from '@mui/material';
-import { useParams } from 'react-router-dom';
-
+import { useNavigate, useParams } from 'react-router-dom';
+import Coursecards from "../components/WebDevcom/Coursecards";
 
 const CourseDetails = () => {
 
@@ -290,7 +290,8 @@ const CourseDetails = () => {
       'aria-controls': `simple-tabpanel-${index}`,
     };
   };
-
+const navigate=useNavigate();
+const pay=()=>{navigate('/payment')};
   return (
     <div>
       <div>
@@ -400,7 +401,7 @@ const CourseDetails = () => {
               <div className="border border-violet-500 text-violet-500 m-5 p-3 rounded-lg text-center">
                 This Course Fee {courseInfo.price.toFixed(2)}
               </div>
-              <div className="bg-violet-500 text-white text-center p-3 m-3 rounded-lg">
+              <div className="bg-violet-500 text-white text-center p-3 m-3 rounded-lg hover:cursor-pointer" onClick={pay}>
                 Join This Course
               </div>
             </div>
@@ -429,9 +430,9 @@ const CourseDetails = () => {
               <div className="p-5"><CircleArrowRight /></div>
             </div>
           </div>
-          {/* <div className="my-10 mx-5">
+          <div className="my-10 mx-5">
             <Coursecards />
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

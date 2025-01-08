@@ -38,13 +38,16 @@ import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import Internships from "../pages/Internships";
 import MyProfile from "../pages/MyProfile";
-import Contact from "../pages/ContactUs";
+import ContactUs from "../pages/ContactUs";
 import Footer from "../components/Footer";
 // import WebDev from "../pages/internships/Webdev";
 import WebDev from "../pages/CourseComp";
 import DataScience from "../pages/internships/DataScience";
 import Design from "../pages/internships/Design";
 import CourseDetails from "../pages/CoursePage";
+import Login from "../pages/Login"
+import Payment from "../pages/Payment"
+import SignUp from "../pages/SignUp"
 
 const Routing = () => {
   return (
@@ -59,6 +62,9 @@ const Routing = () => {
         <Route path="/internships/design" element={<Design />} />
         <Route path="/profile" element={<MyProfile />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/payment" element={<Payment />} /> 
+        <Route path="/login" element={<Login />} /> 
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Footer />
     </>
