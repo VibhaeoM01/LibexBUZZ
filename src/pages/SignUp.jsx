@@ -95,7 +95,7 @@ const SignUp = () => {
           {/* Google Sign-Up Button */}
           <button className="w-full flex items-center justify-center bg-gray-100 py-2 border border-gray-300 rounded-lg hover:bg-gray-200 transition mb-6">
             <img
-              src="/src/Images/google.png"
+              src="/public/Images/google.png"
               alt="Google Icon"
               className="h-5 w-5 mr-2"
             />
