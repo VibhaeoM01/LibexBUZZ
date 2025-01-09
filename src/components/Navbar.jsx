@@ -129,7 +129,7 @@ function Navbar() {
             )}
           </li>
           <li>
-            <Link to="/profile" className="hover:text-gray-700">
+            <Link to="/blogs" className="hover:text-gray-700">
               Blogs
             </Link>
           </li>

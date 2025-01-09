@@ -3,46 +3,51 @@ import { Star, CircleArrowLeft, CircleArrowRight } from 'lucide-react';
 import { Box, Tabs, Tab } from '@mui/material';
 import { useNavigate, useParams } from 'react-router-dom';
 import Coursecards from "../components/WebDevcom/Coursecards";
+import Overview from '../components/WebDev/Overview';
+import Reviews from '../components/WebDev/Reviews';
 
 const CourseDetails = () => {
 
     const courseDataa = [
-        {
-          id: "ui-ux",
-          title: "The Complete UI/UX Designer Course",
-          instructor: {
-            name: "Jonathan Carter",
-            role: "UX Designer",
-            experience: "8 Years",
-            students: 180,
-            rating: "4.56",
-            reviews: 36,
-            bio: "Jonathan is a seasoned UI/UX Designer with over 8 years of experience crafting intuitive and visually compelling digital interfaces. He specializes in user-centered design, blending creativity with functionality to enhance user engagement. His expertise spans web and mobile applications, delivering solutions that align seamlessly with client goals."
-          },
-          courseInfo: {
-            level: "Expert",
-            duration: "09h 30m",
-            lessons: 20,
-            students: 180,
-            certifications: "Yes",
-            language: "English",
-            price: 19999.00,
-            rating: 3.4,
-            classes: 30,
-            reviews: 36
-          },
-          requirements: [
-            "Foundational Knowledge",
-            "Prototyping Skills",
-            "User Research",
-            "Wireframing and Design Systems"
-          ],
-          description: "The UI/UX Designer course is designed to equip learners with the skills and knowledge to create intuitive, engaging, and user-centered digital experiences. Through hands-on projects and expert guidance, participants will explore design principles, user research techniques, wireframing, prototyping, and usability testing. The course emphasizes creative problem-solving and collaboration, preparing students to craft visually appealing interfaces that prioritize user needs. With a focus on industry best practices and emerging trends, learners will build a strong foundation to excel in the dynamic field of UI/UX design."
-        },
+        // {
+        //   id: "ui-ux",
+        //   title: "The Complete UI/UX Designer Course",
+        //   instructor: {
+        //     name: "Jonathan Carter",
+        //     role: "UX Designer",
+        //     experience: "8 Years",
+        //     students: 180,
+        //     rating: "4.56",
+        //     reviews: 36,
+        //     bio: "Jonathan is a seasoned UI/UX Designer with over 8 years of experience crafting intuitive and visually compelling digital interfaces. He specializes in user-centered design, blending creativity with functionality to enhance user engagement. His expertise spans web and mobile applications, delivering solutions that align seamlessly with client goals."
+        //   },
+        //   courseInfo: {
+        //     level: "Expert",
+        //     duration: "09h 30m",
+        //     lessons: 20,
+        //     students: 180,
+        //     certifications: "Yes",
+        //     language: "English",
+        //     price: 19999.00,
+        //     rating: 3.4,
+        //     classes: 30,
+        //     reviews: 36
+        //   },
+          
+        //   requirements: [
+        //     "Foundational Knowledge",
+        //     "Prototyping Skills",
+        //     "User Research",
+        //     "Wireframing and Design Systems"
+        //   ],
+        //   description: "The UI/UX Designer course is designed to equip learners with the skills and knowledge to create intuitive, engaging, and user-centered digital experiences. Through hands-on projects and expert guidance, participants will explore design principles, user research techniques, wireframing, prototyping, and usability testing. The course emphasizes creative problem-solving and collaboration, preparing students to craft visually appealing interfaces that prioritize user needs. With a focus on industry best practices and emerging trends, learners will build a strong foundation to excel in the dynamic field of UI/UX design."
+        // },
         {
           id: "webdev",
           title: "The Complete Web Development Course",
           instructor: {
+            banner:"",
+            insimg:"",
             name: "Nandha Kishore",
             role: "Web Developer",
             experience: "10 Years",
@@ -63,6 +68,16 @@ const CourseDetails = () => {
             classes: 30,
             reviews: 36
           },
+          overview:{
+            desc1: "Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering bothfront-end and back-end development, the program includes modules onHTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining theconfidence to tackle complex web solutions.",
+            desc2:"Led by industry expert instructors, the course ensures students stayupdated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
+            desc3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful.",
+            pt1:"A Laptop or Desktop",
+            pt2:"Basic Computer Skills",
+            pt3:"Time Commitment",
+            pt4:"Willingness to Learn",
+
+        },
           requirements: [
             "A Laptop or Desktop",
             "Basic Computer Skills",
@@ -71,6 +86,93 @@ const CourseDetails = () => {
           ],
           description: "Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions."
         },
+        {
+          curriculum: {
+    "sectionTitle": "Introduction To Web Development",
+    "lessons": [
+      {
+        "title": "Introduction to JavaScript, Run JavaScript in VSCode",
+        "duration": "5.00 Min",
+        "completed": true
+      },
+      {
+        "title": "What is variable, five things you need to declare a variable",
+        "duration": "13.00 Min",
+        "completed": true
+      },
+      {
+        "title": "Variable type, Numeric, String, Boolean",
+        "duration": "12.00 Min",
+        "completed": true
+      },
+      {
+        "title": "Simple Mathematical operations in JavaScript",
+        "duration": "15.00 Min",
+        "completed": true
+      },
+      {
+        "title": "(advanced) Mathematical operation shorthand",
+        "duration": "11.00 Min",
+        "completed": true
+      }
+    ]
+  },
+  reviews: {
+    "totalReviews": 2,
+    "courseTitle": "Web Development Course",
+    "reviewsList": [
+      {
+        "src": "https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D",
+        "name": "Kevin Martin",
+        "date": "March 20,2024",
+        "comment": "Libex's hands-on approach and expert instructors helped me land my dream job in Web Development",
+        "rating": 5
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1734533992947-44970e6e5010?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D",
+        "name": "Sarah Aibert",
+        "date": "June 10,2024",
+        "comment": "Libex's hands-on approach and expert instructors helped me land my dream job in Web Development",
+        "rating": 5
+      },
+    ]
+  },
+},
+
+        // {
+        //   id: "data-science",
+        //   title: "The Complete Data Science Course",
+        //   instructor: {
+        //     name: "Ramesh Yadav",
+        //     role: "Data Analyst",
+        //     experience: "12 Years",
+        //     students: 180,
+        //     rating: "4.54",
+        //     reviews: 36,
+        //     bio: "Udex's expert instructors in data analysis bring extensive industry experience and cutting-edge knowledge to the classroom. These professionals guide learners through practical projects, real-world case studies, and advanced analytical tools. Their mentorship ensures students gain job-ready skills and excel in dynamic data roles."
+        //   },
+        //   courseInfo: {
+        //     level: "Expert",
+        //     duration: "10h 30m",
+        //     lessons: 20,
+        //     students: 190,
+        //     certifications: "Yes",
+        //     language: "English",
+        //     price: 17999.00,
+        //     rating: 3.4,
+        //     classes: 30,
+        //     reviews: 36
+        //   },
+        //   requirements: [
+        //     "Basic understanding of mathematics and statistics",
+        //     "Familiarity with programming languages such as Python",
+        //     "Knowledge of database management systems and SQL",
+        //     "Access to a computer with internet for online resources and software tools"
+        //   ],
+        //   description: "The Data Science course is designed to equip learners with the knowledge and skills needed to analyze, visualize, and interpret complex data. The curriculum covers foundational topics such as statistics, machine learning, data wrangling, and data visualization using popular tools like Python, R, and SQL. Through hands-on projects and real-world case studies, participants will gain practical experience in extracting actionable insights from data."
+        // },
+
+        
         {
           id: "data-science",
           title: "The Complete Data Science Course",
@@ -95,14 +197,145 @@ const CourseDetails = () => {
             classes: 30,
             reviews: 36
           },
-          requirements: [
-            "Basic understanding of mathematics and statistics",
-            "Familiarity with programming languages such as Python",
-            "Knowledge of database management systems and SQL",
-            "Access to a computer with internet for online resources and software tools"
-          ],
-          description: "The Data Science course is designed to equip learners with the knowledge and skills needed to analyze, visualize, and interpret complex data. The curriculum covers foundational topics such as statistics, machine learning, data wrangling, and data visualization using popular tools like Python, R, and SQL. Through hands-on projects and real-world case studies, participants will gain practical experience in extracting actionable insights from data."
+          overview: {
+            description: "The Data Science course is designed to equip learners with the knowledge and skills needed to analyze, visualize, and interpret complex data. The curriculum covers foundational topics such as statistics, machine learning, data wrangling, and data visualization using popular tools like Python, R, and SQL. Through hands-on projects and real-world case studies, participants will gain practical experience in extracting actionable insights from data. The course also emphasizes the ethical use of data and best practices in data-driven decision-making. Whether you're a beginner or a professional looking to upskill, this course provides a comprehensive pathway to excel in the field of data science.",
+            requirements: [
+              "Basic understanding of mathematics and statistics",
+              "Familiarity with programming languages such as Python",
+              "Knowledge of database management systems and SQL",
+              "Access to a computer with internet for online resources and software tools"
+            ]
+          },
+          curriculum: {
+            sectionTitle: "Introduction To Data",
+            lessons: [
+              {
+                title: "Data Base and process",
+                duration: "5.00 Min",
+                completed: true
+              },
+              {
+                title: "Statistics",
+                duration: "13.00 Min",
+                completed: true
+              },
+              {
+                title: "Machine Learning",
+                duration: "12.00 Min",
+                completed: true
+              },
+              {
+                title: "Visualization",
+                duration: "15.00 Min",
+                completed: true
+              },
+              {
+                title: "Data Mining",
+                duration: "11.00 Min",
+                completed: true
+              }
+            ]
+          },
+          reviews: {
+            totalReviews: 2,
+            reviewsList: [
+              {
+                name: "Chance Mango",
+                date: "March 20, 2024",
+                comment: "Libex's hands-on approach and expert instructors helped me land my dream job in Data Analyst i gain more skills .Thank you soo mcuh",
+                rating: 5
+              },
+              {
+                name: "Desirae Donin",
+                date: "June 10, 2024",
+                comment: "Libex's hands-on approach and expert instructors helped me land my dream job in Data Analyst i gain more skills .Thank you soo mcuh",
+                rating: 5
+              }
+            ]
+          }
         },
+        {
+          id: "ui-ux",
+          title: "The Complete UI/UX Designer Course",
+          instructor: {
+            name: "Jonathan Carter",
+            role: "UX Designer",
+            experience: "8 Years",
+            students: 180,
+            rating: "4.56",
+            reviews: 36,
+            bio: "Jonathan is a seasoned UI/UX Designer with over 8 years of experience crafting intuitive and visually compelling digital interfaces. He specializes in user-centered design, blending creativity with functionality to enhance user engagement. His expertise spans web and mobile applications, delivering solutions that align seamlessly with client goals."
+          },
+          courseInfo: {
+            level: "Expert",
+            duration: "09h 30m",
+            lessons: 20,
+            students: 180,
+            certifications: "Yes",
+            language: "English",
+            price: 19999.00,
+            rating: 3.4,
+            classes: 30,
+            reviews: 36
+          },
+          overview: {
+            description: "The UI/UX Designer course is designed to equip learners with the skills and knowledge to create intuitive, engaging, and user-centered digital experiences. Through hands-on projects and expert guidance, participants will explore design principles, user research techniques, wireframing, prototyping, and usability testing. The course emphasizes creative problem-solving and collaboration, preparing students to craft visually appealing interfaces that prioritize user needs. With a focus on industry best practices and emerging trends, learners will build a strong foundation to excel in the dynamic field of UI/UX design.",
+            requirements: [
+              "Foundational Knowledge",
+              "Prototyping Skills",
+              "User Research",
+              "Wireframing and Design Systems"
+            ]
+          },
+          curriculum: {
+            sectionTitle: "Introduction To UI Design",
+            lessons: [
+              {
+                title: "Introduction to UI/UX Design",
+                duration: "5.00 Min",
+                completed: true
+              },
+              {
+                title: "Design Fundamentals",
+                duration: "13.00 Min",
+                completed: true
+              },
+              {
+                title: "User Research and Analysis",
+                duration: "12.00 Min",
+                completed: true
+              },
+              {
+                title: "Wireframing and Prototyping",
+                duration: "15.00 Min",
+                completed: true
+              },
+              {
+                title: "UX Writing",
+                duration: "11.00 Min",
+                completed: true
+              }
+            ]
+          },
+          reviews: {
+            totalReviews: 2,
+            reviewsList: [
+              {
+                name: "Wilson Philips",
+                date: "March 20, 2024",
+                comment: "The UI/UX Designer course at Labex exceeded my expectations. The practical approach and real-world projects helped me sharpen my skills and build a strong portfolio.",
+                rating: 5
+              },
+              {
+                name: "Carla Levin",
+                date: "June 10, 2024",
+                comment: "I gained valuable insights into UI/UX design principles through this course. The hands-on assignments and expert guidance were extremely beneficial for my career growth.",
+                rating: 5
+              }
+            ]
+          }
+        },
+  
         {
           id: "artificial-intelligence",
           title: "The Complete Artificial Intelligence Course",
@@ -320,19 +553,19 @@ const pay=()=>{navigate('/payment')};
             <div className="flex my-3 gap-9 text-lg">
               <div className="flex gap-2">
                 <div className="h-10 overflow-hidden w-10 rounded-full">
-                  <img className="rounded-full" src="/api/placeholder/40/40" alt="Instructor" />
+                  <img className="rounded-full" src="/Images/profile.png" alt="Instructor" />
                 </div>
                 <div>{instructor.name}</div>
               </div>
               <div className="flex">
                 <div className="h-12 overflow-hidden w-10 rounded-full">
-                  <img className="h-16 w-16" src="/api/placeholder/64/64" alt="Classes" />
+                  <img className="h-8 w-13" src="/Images/video.jpeg" alt="Classes" />
                 </div>
                 <div>{courseInfo.classes} Classes</div>
               </div>
               <div className="flex">
                 <div className="rounded-full">
-                  <Star />
+                  <img  className='h-8' src="/Images/star.jpeg" alt="" />
                 </div>
                 <div>{courseInfo.rating} ({courseInfo.reviews} Review)</div>
               </div>
@@ -349,7 +582,15 @@ const pay=()=>{navigate('/payment')};
                 <Tab label="Reviews" {...a11yProps(2)} />
               </Tabs>
             </Box>
-
+            <CustomTabPanel value={value} index={0}>
+  <Overview/>
+</CustomTabPanel>
+ <CustomTabPanel value={value} index={1}>
+   <Curriculum />
+ </CustomTabPanel>
+ <CustomTabPanel value={value} index={2}>
+   <Reviews />
+ </CustomTabPanel>
             <div className="flex m-5 mt-10 gap-3 p-5 border border-gray-200 rounded-lg">
               <div className="w-full">
                 <img className="rounded-lg h-5/6 w-full" src="/api/placeholder/400/300" alt="Instructor" />

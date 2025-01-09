@@ -48,6 +48,7 @@ import CourseDetails from "../pages/CoursePage";
 import Login from "../pages/Login"
 import Payment from "../pages/Payment"
 import SignUp from "../pages/SignUp"
+import Blog from "../pages/Blogs.jsx";
 
 const Routing = () => {
   return (
@@ -60,7 +61,7 @@ const Routing = () => {
         <Route path="/course/:courseid" element={<CourseDetails />} />
         <Route path="/internships/data-science" element={<DataScience />} />
         <Route path="/internships/design" element={<Design />} />
-        <Route path="/profile" element={<MyProfile />} />
+        <Route path="/blogs" element={<Blog />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/payment" element={<Payment />} /> 
         <Route path="/login" element={<Login />} /> 
