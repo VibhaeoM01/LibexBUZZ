@@ -18,14 +18,31 @@ const Home = () => {
 
   return (
     <div className="p-10 text-center relative">
-      {/* Large image on the left */}
+      {/* large balls - Overlay-Blur */}
+      <img
+        src="/public/Images/Background/Overlay+Blur.png"
+        alt="Large Photo Left"
+        className="w-1/4 h-auto left-0 absolute"
+      />
 
+      {/* Small balls */}
+      <div className="relative">
         <img
-          src="/public/Images/Background/Overlay+Blur.png" // Replace with your large image path
-          alt="Large Photo Left"
-          className="w-1/4 h-auto left-0 absolute"
-          />
-      
+          src="/public/Images/Background/ball-1.png"
+          alt="Ball 1"
+          className="absolute top-8 left-10 w-12 h-12 opacity-60 z-0"
+        />
+        <img
+          src="/public/Images/Background/ball-2.png"
+          alt="Ball 2"
+          className="absolute top-1/3 right-20 w-16 h-16 opacity-50 z-0"
+        />
+        <img
+          src="/public/Images/Background/ball-3.png"
+          alt="Ball 2"
+          className="absolute top-40 right-1/3 w-6 h-6 opacity-50 z-0"
+        />
+      </div>
 
       {/* Main Content */}
       <div className="font-bold text-6xl relative z-10">
@@ -34,26 +51,64 @@ const Home = () => {
           Your Dream <span className="text-cyan-400">Career</span>
         </div>
       </div>
-      <div className="flex justify-center mt-16">
-        <button className="bg-violet-500 py-4 px-5 mb-4 rounded-3xl text-white">
+      <div className="flex justify-center items-center space-x-6 mt-16">
+        <button className="bg-violet-500 py-4 px-5 rounded-3xl text-white text-lg">
           Find Course
         </button>
+        <img
+          src="/public/Images/Group 1.png"
+          alt="GroupImage"
+          className=" object-contain"
+        />
       </div>
 
-      <Photos  className = "z-10"/>
+      <div className="relative">
+
+      <img
+        src="/public/Images/Background/ball-2.png"
+        alt="Ball 4"
+        className="absolute bottom-2 right-1/3 w-6 h-6 opacity-50 z-0"
+      />
+      <img
+        src="/public/Images/Background/ball-3.png"
+        alt="Ball 4"
+        className="absolute bottom-2 left-1/3 w-6 h-6 opacity-50 z-0"
+      />
+      </div>
 
 
-      {/* Large image on the right */}
+      <Photos />
+
+      {/* Small balls */}
+
+      <div className="relative">
         <img
-          src="/public/Images/Background/Overlay+Blur-Orange.png" // Replace with your large image path
-          alt="Large Photo Right"
-          className="w-1/4 h-auto absolute right-0 z-0 "
+          src="/public/Images/Background/ball-3.png"
+          alt="Ball 3"
+          className="absolute bottom-1/3 left-4 w-10 h-10 opacity-40 z-0"
         />
+        <img
+          src="/public/Images/Background/ball-1.png"
+          alt="Ball 4"
+          className="absolute top-2 left-1/3 w-12 h-12 opacity-50 z-0"
+        />
+        <img
+          src="/public/Images/Background/ball-2.png"
+          alt="Ball 5"
+          className="absolute top-1/3 right-4 w-14 h-14 opacity-60 z-0"
+        />
+      </div>
 
-      <Cards className = 'z-10'/>
+      {/* large ball - Overlay-Orange */}
+      <img
+        src="/public/Images/Background/Overlay+Blur-Orange.png"
+        alt="Large Photo Left"
+        className="w-1/4 h-auto right-0 absolute "
+      />
+
+      <Cards className="z-10" />
 
       {/* Other Content */}
-
       <div className="flex justify-center z-10">
         <div className="bg-violet-100 flex p-20 rounded-3xl h-2/3 w-10/12 m-28 z-10">
           <div className="overflow-hidden rounded-xl">
@@ -63,7 +118,10 @@ const Home = () => {
             <div className="text-left text-orange-500 text-3xl">About us</div>
             <div className="text-4xl font-extrabold text-left mt-8">
               <span className="text-cyan-400">Training</span> Tailored For Your
-              Success <div>With <span className="text-cyan-400">Libex</span></div>
+              Success{" "}
+              <div>
+                With <span className="text-cyan-400">Libex</span>
+              </div>
             </div>
             <div>
               <div className="text-gray-600">
