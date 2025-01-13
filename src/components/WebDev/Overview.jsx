@@ -42,3 +42,28 @@ function Overview() {
 }
 
 export default Overview;
+
+// import React from "react";
+
+// function Overview({ description, requirements }) {
+//   return (
+//     <div>
+//       <div className="font-bold text-4xl my-3">Course Descriptions</div>
+//       <div className="text-gray-400 text-lg">{description}</div>
+//       <div>
+//         <div className="font-bold text-4xl mt-6 my-3 text-gray-800">
+//           Requirements For The Course
+//         </div>
+//         <div className="text-gray-400 text-lg">
+//           {requirements.map((req, index) => (
+//             <div key={index} className="mb-4">
+//               ✔️ {req}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Overview;

@@ -8,6 +8,7 @@ import Weare from "../components/Weare";
 import Testimonials from "../components/Testimonials";
 import { useNavigate } from "react-router-dom";
 import ExpertTeam from "../components/ExpertTeam";
+import Blog from "../components/Blog"
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const handlenav=()=>{
 }
 
   return (
+    <div>
     <div className="p-10 text-center">
       {/* <h1 className="text-4xl font-bold mb-6">Welcome to Home Page</h1> */}
       {/* <p className="text-gray-600">Explore internship paths and more on our platform!</p> */}
@@ -96,8 +98,11 @@ const handlenav=()=>{
       <Weare />
       <Testimonials />
       <ExpertTeam />
+      
 
 
+    </div>
+    <Blog />
     </div>
   );
 };

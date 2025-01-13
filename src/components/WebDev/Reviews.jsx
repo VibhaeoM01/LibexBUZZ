@@ -35,3 +35,41 @@ function Reviews() {
 }
 
 export default Reviews
+
+// import React from "react";
+// import { Star } from "lucide-react";
+
+// function Reviews({ reviews }) {
+//   return (
+//     <div>
+//       <h1 className="font-semibold text-2xl">
+//         {reviews.totalReviews} Reviews, Web Development Course
+//       </h1>
+//       <div>
+//         {reviews.reviewsList.map((review, index) => (
+//           <div key={index} className="flex w-6/7 m-5">
+//             <div>
+//               <img
+//                 className="h-20 w-24 rounded-full"
+//                 src={review.src}
+//                 alt={review.name}
+//               />
+//             </div>
+//             <div className="m-5">
+//               <div>{review.name}</div>
+//               <div className="my-4 text-gray-400">{review.date}</div>
+//               <div className="my-5 text-gray-400">{review.comment}</div>
+//             </div>
+//             <div className="flex">
+//               {[...Array(review.rating)].map((_, starIndex) => (
+//                 <Star key={starIndex} />
+//               ))}
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Reviews;
