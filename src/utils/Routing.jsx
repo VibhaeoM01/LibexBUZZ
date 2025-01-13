@@ -41,7 +41,6 @@ import MyProfile from "../pages/MyProfile";
 import ContactUs from "../pages/ContactUs";
 import Footer from "../components/Footer";
 // import WebDev from "../pages/internships/Webdev";
-import WebDev from "../pages/CourseComp";
 import DataScience from "../pages/internships/DataScience";
 import Design from "../pages/internships/Design";
 import CourseDetails from "../pages/CoursePage";

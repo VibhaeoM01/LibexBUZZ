@@ -10,7 +10,7 @@ function Photos() {
     ];
   return (
     // <div>photos</div>
-    <div className='flex justify-center gap-3'>
+    <div className='flex justify-center gap-6'>
         {photoss.map((ph,i)=>(
           <div key={i} className={i==1 || i==2 ? 'mt-24' : ''}><Photo prop={ph.src} alt={ph.alt} /></div>
         ))}
