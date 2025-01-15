@@ -48,6 +48,8 @@ import Login from "../pages/Login"
 import Payment from "../pages/Payment"
 import SignUp from "../pages/SignUp"
 import Blog from "../pages/Blogs.jsx";
+import Success from "../pages/Success.jsx"
+import Cancel from "../pages/Cancel.jsx";
 
 const Routing = () => {
   return (
@@ -66,6 +68,8 @@ const Routing = () => {
         <Route path="/payment" element={<Payment />} /> 
         <Route path="/login" element={<Login />} /> 
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Cancel />} />
       </Routes>
       <Footer />
     </>
