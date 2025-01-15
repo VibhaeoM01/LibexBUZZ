@@ -7,7 +7,12 @@ import Courses from "../components/Courses";
 import Weare from "../components/Weare";
 import Testimonials from "../components/Testimonials";
 import ExpertTeam from "../components/ExpertTeam";
+<<<<<<< HEAD
+import Blog from "../components/Blog"
+
+=======
 import { useNavigate } from "react-router-dom";
+>>>>>>> origin/main
 
 const Home = () => {
   const navigate = useNavigate();
@@ -17,6 +22,13 @@ const Home = () => {
   };
 
   return (
+<<<<<<< HEAD
+    <div>
+    <div className="p-10 text-center">
+      {/* <h1 className="text-4xl font-bold mb-6">Welcome to Home Page</h1> */}
+      {/* <p className="text-gray-600">Explore internship paths and more on our platform!</p> */}
+      <div className="font-bold text-6xl">
+=======
     <div className="p-10 text-center relative">
       {/* large balls - Overlay-Blur */}
       <img
@@ -46,6 +58,7 @@ const Home = () => {
 
       {/* Main Content */}
       <div className="font-bold text-6xl relative z-10">
+>>>>>>> origin/main
         <div className="mt-36">Internship Paths To</div>
         <div>
           Your Dream <span className="text-cyan-400">Career</span>
@@ -187,6 +200,14 @@ const Home = () => {
       <Weare />
       <Testimonials />
       <ExpertTeam />
+<<<<<<< HEAD
+      
+
+
+=======
+>>>>>>> origin/main
+    </div>
+    <Blog />
     </div>
   );
 };
