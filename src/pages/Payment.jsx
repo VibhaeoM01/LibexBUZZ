@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -15,6 +16,19 @@ const Payment = () => {
       navigate("/");
     }
   };
+
+
+  const buyFunction = async (event) => {
+    event.preventDefault(); // Prevent form submission
+    try {
+        const response = await axios.post('http://localhost:3000/stripe');
+        if (response.status === 200) {
+            window.location.href = response.data.url; // Redirect to Stripe page
+        }
+    } catch (error) {
+        console.error('Error processing payment:', error);
+    }
+};
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -137,6 +151,7 @@ const Payment = () => {
                 <button
                   type="submit"
                   className="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                  onClick={buyFunction}
                 >
                   Join the Course
                 </button>

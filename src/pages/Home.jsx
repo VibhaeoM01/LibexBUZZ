@@ -223,6 +223,10 @@ import Weare from "../components/Weare";
 import Testimonials from "../components/Testimonials";
 import ExpertTeam from "../components/ExpertTeam";
 import Blog from "../components/Blog";
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -233,11 +237,21 @@ const Home = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div>
       <div className="p-10 text-center relative">
         {/* large balls - Overlay-Blur */}
         <img
           src="/public/Images/Background/Overlay+Blur.png"
+=======
+    <div className="p-10 text-center">
+      {/* <h1 className="text-4xl font-bold mb-6">Welcome to Home Page</h1> */}
+      {/* <p className="text-gray-600">Explore internship paths and more on our platform!</p> */}
+      <div className="p-10 text-center relative">
+        {/* large balls - Overlay-Blur */}
+        <img
+          src={`public/Images/Background/Overlay+Blur.png`}
+>>>>>>> origin/main
           alt="Large Photo Left"
           className="w-1/4 h-auto left-0 absolute"
         />
@@ -245,17 +259,29 @@ const Home = () => {
         {/* Small balls */}
         <div className="relative">
           <img
+<<<<<<< HEAD
             src="/public/Images/Background/ball-1.png"
+=======
+            src={`public/Images/Background/ball-1.png`}
+>>>>>>> origin/main
             alt="Ball 1"
             className="absolute top-8 left-10 w-12 h-12 opacity-60 z-0"
           />
           <img
+<<<<<<< HEAD
             src="/public/Images/Background/ball-2.png"
+=======
+            src={`public/Images/Background/ball-2.png`}
+>>>>>>> origin/main
             alt="Ball 2"
             className="absolute top-1/3 right-20 w-16 h-16 opacity-50 z-0"
           />
           <img
+<<<<<<< HEAD
             src="/public/Images/Background/ball-3.png"
+=======
+            src={`public/Images/Background/ball-3.png`}
+>>>>>>> origin/main
             alt="Ball 2"
             className="absolute top-40 right-1/3 w-6 h-6 opacity-50 z-0"
           />
@@ -268,26 +294,43 @@ const Home = () => {
             Your Dream <span className="text-cyan-400">Career</span>
           </div>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
         <div className="flex justify-center items-center space-x-6 mt-16">
           <button className="bg-violet-500 py-4 px-5 rounded-3xl text-white text-lg">
             Find Course
           </button>
           <img
+<<<<<<< HEAD
             src="/public/Images/Group 1.png"
             alt="GroupImage"
             className="object-contain"
+=======
+            src={`public/Images/Group 1.png`}
+            alt="GroupImage"
+            className=" object-contain"
+>>>>>>> origin/main
           />
         </div>
 
         <div className="relative">
           <img
+<<<<<<< HEAD
             src="/public/Images/Background/ball-2.png"
+=======
+            src={`public/Images/Background/ball-2.png`}
+>>>>>>> origin/main
             alt="Ball 4"
             className="absolute bottom-2 right-1/3 w-6 h-6 opacity-50 z-0"
           />
           <img
+<<<<<<< HEAD
             src="/public/Images/Background/ball-3.png"
+=======
+            src={`public/Images/Background/ball-3.png`}
+>>>>>>> origin/main
             alt="Ball 4"
             className="absolute bottom-2 left-1/3 w-6 h-6 opacity-50 z-0"
           />
@@ -296,6 +339,10 @@ const Home = () => {
         <Photos />
 
         {/* Small balls */}
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
         <div className="relative">
           <img
             src="/public/Images/Background/ball-3.png"
@@ -303,7 +350,11 @@ const Home = () => {
             className="absolute bottom-1/3 left-4 w-10 h-10 opacity-40 z-0"
           />
           <img
+<<<<<<< HEAD
             src="/public/Images/Background/ball-1.png"
+=======
+            src={`public/Images/Background/ball-1.png`}
+>>>>>>> origin/main
             alt="Ball 4"
             className="absolute top-2 left-1/3 w-12 h-12 opacity-50 z-0"
           />
@@ -316,9 +367,15 @@ const Home = () => {
 
         {/* large ball - Overlay-Orange */}
         <img
+<<<<<<< HEAD
           src="/public/Images/Background/Overlay+Blur-Orange.png"
           alt="Large Photo Left"
           className="w-1/4 h-auto right-0 absolute"
+=======
+          src={`public/Images/Background/Overlay+Blur-Orange.png`}
+          alt="Large Photo Left"
+          className="w-1/4 h-auto right-0 absolute "
+>>>>>>> origin/main
         />
 
         <Cards className="z-10" />
@@ -332,8 +389,13 @@ const Home = () => {
             <div className="mx-16 w-1/2 text-left ml-36">
               <div className="text-left text-orange-500 text-3xl">About us</div>
               <div className="text-4xl font-extrabold text-left mt-8">
+<<<<<<< HEAD
                 <span className="text-cyan-400">Training</span> Tailored For Your
                 Success{" "}
+=======
+                <span className="text-cyan-400">Training</span> Tailored For
+                Your Success{" "}
+>>>>>>> origin/main
                 <div>
                   With <span className="text-cyan-400">Libex</span>
                 </div>
@@ -355,7 +417,11 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
+<<<<<<< HEAD
                     <div className="font-semibold">Expert Instructor</div>
+=======
+                    <div className="font-semibold">Expert Instructor</div>{" "}
+>>>>>>> origin/main
                     <div className="text-gray-600">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Distinctio quae, nulla officiis porro fuga voluptatum
