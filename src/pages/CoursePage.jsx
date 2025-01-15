@@ -38,18 +38,65 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      overview:
-      {
-        part1:"Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
-        part2:"Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
-        part3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
-          requirements: [
-        "A Laptop or Desktop",
-        "Basic Computer Skills",
-        "Time Commitment",
-        "Willingness to Learn"
-      ],
-    }
+        overview: {
+        description: "The UI/UX Designer course is designed to equip learners with the skills and knowledge to create intuitive, engaging, and user-centered experiences. Through hands-on projects and expert guidance, participants will explore design principles, user research techniques, wireframing, prototyping, and usability testing. The course emphasizes creative problem-solving and collaboration, preparing students to craft visually appealing interfaces that prioritize user needs. With a focus on industry best practices and emerging trends, learners will build a strong foundation to excel in the dynamic field of UI/UX design."
+          },
+        Req:{
+           th:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful.",
+        requirements: [
+          "Foundational Knowledge",
+          "Prototyping Skills",
+          "User Research",
+          "Wireframing and Design Systems"
+        ],
+        },
+      curriculum: {
+        sectionTitle: "Introduction to UI Design",
+        lessons: [
+          {
+            title: "Introduction to UI/UX Design",
+            duration: "5.00 Min",
+            completed: true
+          },
+          {
+            title: "Design Fundamentals",
+            duration: "13.00 Min",
+            completed: true
+          },
+          {
+            title: "User Research and Analysis",
+            duration: "12.00 Min",
+            completed: true
+          },
+          {
+            title: "Wireframing and Prototyping",
+            duration: "15.00 Min",
+            completed: true
+          },
+          {
+            title: "UX Writing",
+            duration: "11.00 Min",
+            completed: true
+          }
+        ]
+      },
+      reviews: {
+        totalReviews: 2,
+        reviewsList: [
+          {
+            name: "Wilson Philips",
+            date: "March 20, 2024",
+            comment: "The UI/UX Designer course at Labex exceeded my expectations. The practical approach and real-world projects helped me sharpen my skills and build a strong portfolio.",
+            rating: 5
+          },
+          {
+            name: "Carla Levin",
+            date: "June 10, 2024",
+            comment: "I gained valuable insights into UI/UX design principles through this course. The hands-on assignments and expert guidance were extremely beneficial for my career growth.",
+            rating: 5
+          }
+        ]
+      }
     },
     {
       id: "webdev",
@@ -77,18 +124,89 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      overview:
+      // overview:
+      // {
+      //   part1:"Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
+      //   part2:"Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
+      //   part3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
+      //     requirements: [
+      //   "A Laptop or Desktop",
+      //   "Basic Computer Skills",
+      //   "Time Commitment",
+      //   "Willingness to Learn"
+      // ],
+      // }
+      overview: {
+        desc1: "Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards. A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful.",
+        // pt1: "A Laptop or Desktop",
+        // pt2: "Basic Computer Skills",
+        // pt3: "Time Commitment",
+        // pt4: "Willingness to Learn"
+      },
+      Req:
       {
-        part1:"Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
-        part2:"Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
-        part3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
-          requirements: [
-        "A Laptop or Desktop",
-        "Basic Computer Skills",
-        "Time Commitment",
-        "Willingness to Learn"
-      ],
+        th:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful.",
+        requirements: [
+          "A Laptop or Desktop",
+          "Basic Computer Skills",
+          "Time Commitment",
+          "Willingness to Learn"
+        ],
+
+      },
+      
+     
+      curriculum: {
+        sectionTitle: "Introduction To Web Development",
+        lessons: [
+          {
+            title: "Introduction to JavaScript, Run JavaScript in VSCode",
+            duration: "5.00 Min",
+            completed: true
+          },
+          {
+            title: "What is variable, five things you need to declare a variable",
+            duration: "13.00 Min",
+            completed: true
+          },
+          {
+            title: "Variable type, Numeric, String, Boolean",
+            duration: "12.00 Min",
+            completed: true
+          },
+          {
+            title: "Simple Mathematical operations in JavaScript",
+            duration: "15.00 Min",
+            completed: true
+          },
+          {
+            title: "(advanced) Mathematical operation shorthand",
+            duration: "11.00 Min",
+            completed: true
+          }
+        ]
+      },
+      reviews: {
+        totalReviews: 2,
+        courseTitle: "Web Development Course",
+        reviewsList: [
+          {
+            src: "https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D",
+            name: "Kevin Martin",
+            date: "March 20,2024",
+            comment: "Libex's hands-on approach and expert instructors helped me land my dream job in Web Development",
+            rating: 5
+          },
+          {
+            src: "https://images.unsplash.com/photo-1734533992947-44970e6e5010?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D",
+            name: "Sarah Aibert",
+            date: "June 10,2024",
+            comment: "Libex's hands-on approach and expert instructors helped me land my dream job in Web Development",
+            rating: 5
+          }
+        ]
       }
+      
     },
     {
       id: "data-science",
@@ -211,6 +329,62 @@ const CourseDetails = () => {
       //   "Access to Tools"
       // ],
       // description: "Artificial Intelligence (AI) is a transformative field of computer science that enables machines to simulate human intelligence. This course provides an in-depth understanding of core AI concepts, including machine learning, natural language processing, computer vision, and robotics. Students will explore algorithms, data-driven decision-making, and ethical considerations in AI development. Through hands-on projects and real-world applications, learners will gain practical skills to design and implement intelligent systems."
+      overview: {
+        description: "Artificial Intelligence (AI) is a transformative field of computer science that enables machines to simulate human intelligence. This course provides an in-depth understanding of core AI concepts, including machine learning, natural language processing, computer vision, and robotics. Students will explore algorithms, data-driven decision-making, and ethical considerations in AI development. Through hands-on projects and real-world applications, learners will gain practical skills to design and implement intelligent systems.",
+        requirements: [
+          "Basic Programming Skills",
+          "Mathematical Knowledge",
+          "Analytical Thinking",
+          "Access to Tools"
+        ]
+      },
+      curriculum: {
+        sectionTitle: "Introduction to Artificial Intelligence",
+        lessons: [
+          {
+            title: "Mathematical Foundations for AI",
+            duration: "5.00 Min",
+            completed: true
+          },
+          {
+            title: "Programming for AI",
+            duration: "13.00 Min",
+            completed: true
+          },
+          {
+            title: "Machine Learning",
+            duration: "12.00 Min",
+            completed: true
+          },
+          {
+            title: "Natural Language Processing (NLP)",
+            duration: "15.00 Min",
+            completed: true
+          },
+          {
+            title: "AI Ethics and Safety",
+            duration: "11.00 Min",
+            completed: true
+          }
+        ]
+      },
+      reviews: {
+        totalReviews: 2,
+        reviewsList: [
+          {
+            name: "Nolan Press",
+            date: "March 20, 2024",
+            comment: "The Artificial Intelligence course at Labex offers a great balance of theory and hands-on practice. The instructors are knowledgeable and provide clear explanations of complex concepts.",
+            rating: 5
+          },
+          {
+            name: "Keylynn Frenci",
+            date: "June 10, 2024",
+            comment: "Labex's AI course was an eye-opener for me, providing a solid foundation in AI principles. The content was engaging and the support from instructors was excellent.",
+            rating: 5
+          }
+        ]
+      }
     },
     {
       id: "java",
@@ -238,13 +412,62 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      // requirements: [
-      //   "Familiarity with basic computer operations",
-      //   "Access to a computer with Java Development Kit (JDK) and IDE",
-      //   "An understanding of basic math concepts like variables and logic",
-      //   "Commitment to practice coding exercises and assignments regularly"
-      // ],
-      // description: "The Java Programming course is designed to provide a comprehensive introduction to one of the most widely used programming languages. This course covers core concepts such as object-oriented programming, data structures, and multithreading, while also exploring advanced topics like Java frameworks and APIs. Participants will gain hands-on experience through practical coding exercises, real-world projects, and debugging techniques."
+      overview: {
+        description: "The Java Programming course is designed to provide a comprehensive introduction to one of the most widely used programming languages. This course covers core concepts such as object-oriented programming, data structures, and multithreading, while also exploring advanced topics like Java frameworks and APIs. Participants will gain hands-on experience through practical coding exercises, real-world projects, and debugging techniques.",
+        requirements: [
+          "Familiarity with basic computer operations",
+          "Access to a computer with Java Development Kit (JDK) and IDE",
+          "An understanding of basic math concepts like variables and logic",
+          "Commitment to practice coding exercises and assignments regularly"
+        ]
+      },
+      curriculum: {
+        sectionTitle: "Introduction to Java",
+        lessons: [
+          {
+            title: "Variables and Data Types",
+            duration: "5.00 Min",
+            completed: true
+          },
+          {
+            title: "Control Flow",
+            duration: "13.00 Min",
+            completed: true
+          },
+          {
+            title: "Object-Oriented Programming (OOP) Concepts",
+            duration: "12.00 Min",
+            completed: true
+          },
+          {
+            title: "Collections Framework",
+            duration: "15.00 Min",
+            completed: true
+          },
+          {
+            title: "Java Development Tools",
+            duration: "11.00 Min",
+            completed: true
+          }
+        ]
+      },
+      reviews: {
+        totalReviews: 2,
+        reviewsList: [
+          {
+            name: "Nolan Mango",
+            date: "March 20, 2024",
+            comment: "The Java course at Labex was incredibly informative and hands-on. The instructors made complex concepts easy to understand and apply.",
+            rating: 4
+          },
+          {
+            name: "Desirae Workman",
+            date: "June 10, 2024",
+            comment: "Labex's Java course exceeded my expectations with practical exercises and real-world examples. It gave me the skills I need to excel in my career.",
+            rating: 4
+          }
+        ]
+      }
     },
     {
       id: "python",
@@ -272,13 +495,62 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      // requirements: [
-      //   "Basic Computer Skills",
-      //   "No Prior Coding Knowledge",
-      //   "Software Setup",
-      //   "Motivation to Practice"
-      // ],
-      // description: "The Python Programming course is designed to equip learners with a solid foundation in one of the most versatile and widely-used programming languages. This course covers essential topics including Python syntax, data types, control structures, functions, and modules. Students will also explore advanced concepts such as file handling, object-oriented programming, and working with libraries like NumPy and Pandas."
+      overview: {
+        description: "The Python Programming course is designed to equip learners with a solid foundation in one of the most versatile and widely-used programming languages. This course covers essential topics including Python syntax, data types, control structures, functions, and modules. Students will also explore advanced concepts such as file handling, object-oriented programming, and working with libraries like NumPy and Pandas.",
+        requirements: [
+          "Basic Computer Skills",
+          "No Prior Coding Knowledge",
+          "Software Setup",
+          "Motivation to Practice"
+        ]
+      },
+      curriculum: {
+        sectionTitle: "Introduction to Python",
+        lessons: [
+          {
+            title: "Data Structures",
+            duration: "5.00 Min",
+            completed: true
+          },
+          {
+            title: "Functions and Modules",
+            duration: "13.00 Min",
+            completed: true
+          },
+          {
+            title: "Object-Oriented Programming (OOP)",
+            duration: "12.00 Min",
+            completed: true
+          },
+          {
+            title: "Working with Files",
+            duration: "15.00 Min",
+            completed: true
+          },
+          {
+            title: "Error Handling and Debugging",
+            duration: "11.00 Min",
+            completed: true
+          }
+        ]
+      },
+      reviews: {
+        totalReviews: 2,
+        reviewsList: [
+          {
+            name: "Philip Torff",
+            date: "March 20, 2024",
+            comment: "The Python course at Labex was incredibly comprehensive and easy to follow. The hands-on approach really helped solidify my understanding of the concepts.",
+            rating: 5
+          },
+          {
+            name: "Marilyn Culhane",
+            date: "June 10, 2024",
+            comment: "I highly recommend the Python course at Labex! The instructors are knowledgeable, and the curriculum covers everything from basics to advanced topics.",
+            rating: 5
+          }
+        ]
+      }
     },
     {
       id: "cybersecurity",
@@ -306,7 +578,57 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-
+      curriculum: [
+            {
+              title: "Network Security",
+              duration: "5.00 Min"
+            },
+            {
+              title: "Cryptography",
+              duration: "13.00 Min"
+            },
+            {
+              title: "Threats and Vulnerabilities",
+              duration: "12.00 Min"
+            },
+            {
+              title: "Security in Web and Mobile Applications",
+              duration: "15.00 Min"
+            },
+            {
+              title: "Identity and Access Management (IAM)",
+              duration: "11.00 Min"
+            }
+          ],
+          overview: {
+            description: "The Cybersecurity course provides a comprehensive understanding of protecting digital systems, networks, and data from cyber threats. Participants will learn about threat detection, risk assessment, and implementing effective defense mechanisms to safeguard information assets. The course covers key topics such as ethical hacking, network security, cryptography, and incident response. Designed for both beginners and professionals, it combines theoretical knowledge with practical, hands-on exercises to build real-world skills. By the end of the course, learners will be equipped to identify vulnerabilities, mitigate risks, and contribute to a secure digital environment."
+          },
+          Req:{
+            th:"This course is designed for individuals seeking to build a strong foundation in cybersecurity principles and practices. A basic understanding of computer systems and networks is recommended but not mandatory.",
+            requirements: [
+                  "Comprehensive coverage of cyber threats, vulnerabilities, and attack prevention techniques",
+                  "Hands-on training in using security tools and implementing defense mechanisms",
+                  "Real-world case studies to understand the evolving landscape of cybersecurity",
+                  "Certification upon completion, enhancing professional credibility in the field"
+                ]
+          },
+      reviews: {
+        totalReviews: 2,
+        reviewsList: [
+          {
+            name: "Sarah L",
+            date: "March 20, 2024",
+            comment: "The Machine Learning course at Labex provided an excellent foundation in both theory and practical applications. The hands-on projects were particularly valuable for reinforcing key concepts.",
+            rating: 5
+          },
+          {
+            name: "Ashlynn Herwitz",
+            date: "June 10, 2024",
+            comment: "Labex’s Machine Learning course was comprehensive and engaging. The detailed lectures, combined with real-world examples, made complex topics easy to understand.",
+            rating: 5
+          }
+        ]
+      }
       // requirements: [
       //   "Comprehensive coverage of cyber threats, vulnerabilities, and attack prevention techniques",
       //   "Hands-on training in using security tools and implementing defense mechanisms",
@@ -341,12 +663,58 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      // requirements: [
-      //   "Programming Knowledge",
-      //   "Mathematics Basics",
-      //   "Data Handling Skills",
-      //   "Interest in AI"
-      // ],
+      overview: {
+            description: "The Machine Learning course provides a comprehensive introduction to the principles, algorithms, and applications of machine learning. Designed for beginners and professionals alike, it covers essential topics such as supervised and unsupervised learning, regression, classification, and deep learning techniques. Participants will gain hands-on experience through practical projects and coding exercises, enabling them to build predictive models and deploy machine learning solutions. With a focus on real-world applications, the course explores the use of machine learning in industries like healthcare, finance, and technology. By the end, learners will have the skills and knowledge to solve complex problems using data-driven approaches."
+          },
+          Req:{
+            th:"This course is designed for individuals with a foundational understanding of programming and mathematics, aiming to equip them with practical and theoretical skills in machine learning",
+               requirements: [
+              "Programming Knowledge",
+              "Mathematics Basics",
+              "Data Handling Skills",
+              "Interest in AI"
+            ],
+          },
+          curriculum: [
+                {
+                  title: "Neural Networks and Deep Learning",
+                  duration: "5.00 Min"
+                },
+                {
+                  title: "Model Evaluation and Tuning",
+                  duration: "13.00 Min"
+                },
+                {
+                  title: "Advanced Topics in Machine Learning",
+                  duration: "12.00 Min"
+                },
+                {
+                  title: "Final Project and Case Study",
+                  duration: "15.00 Min"
+                },
+                {
+                  title: "Python for Machine Learning",
+                  duration: "11.00 Min"
+                }
+              ],
+              reviews: {
+                totalReviews: 2,
+                reviewsList: [
+                  {
+                    name: "Sarah L",
+                    date: "March 20, 2024",
+                    comment: "The Machine Learning course at Labex provided an excellent foundation in both theory and practical applications. The hands-on projects were particularly valuable for reinforcing key concepts.",
+                    rating: 5
+                  },
+                  {
+                    name: "Ashlynn Herwitz",
+                    date: "June 10, 2024",
+                    comment: "Labex’s Machine Learning course was comprehensive and engaging. The detailed lectures, combined with real-world examples, made complex topics easy to understand.",
+                    rating: 5
+                  }
+                ]
+              }
+     
       // description: "The Machine Learning course provides a comprehensive introduction to the principles, algorithms, and applications of machine learning. Designed for beginners and professionals alike, it covers essential topics such as supervised and unsupervised learning, regression, classification, and deep learning techniques. Participants will gain hands-on experience through practical projects and coding exercises, enabling them to build predictive models and deploy machine learning solutions."
     },
   ];
@@ -1052,7 +1420,7 @@ const CourseDetails = () => {
               />
               
             </div> */}
-            <div className="overflow-hidden h-3/5 w-5/6">
+            <div className="overflow-hidden h-2/5 w-5/6">
           <img
             className="rounded-lg object-cover h-full w-full"
             src={instructor.img1}
@@ -1096,7 +1464,7 @@ const CourseDetails = () => {
         <div>
      <div className="font-bold text-4xl my-3 ">Course Descriptions</div>
       {/* <div > */}
-      <Typography className="text-gray-400 text-lg">
+      {/* <Typography className="text-gray-400 text-lg">
         Our Web Development course is designed to transform beginners into
         professional developers with industry-ready skills. Covering both
         front-end and back-end development, the program includes modules on
@@ -1109,6 +1477,14 @@ const CourseDetails = () => {
         updated with the latest trends and tools in web development. You'll
         learn best practices for responsive design, performance optimization,
         and secure coding standards.
+      </Typography> */}
+      <Typography className="text-gray-400 text-lg">
+        Our Web Development course is designed to transform beginners into
+        professional developers with industry-ready skills. Covering both
+        front-end and back-end development, the program includes modules on
+        HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With
+        hands-on projects, you'll build real-world applications, gaining the
+        confidence to tackle complex web solutions.
       </Typography>
       {/* </div> */}
       <div>
